@@ -1,0 +1,45 @@
+{
+  "id": "a0e985d1-d2d7-4f14-a285-2a88e1de1ebe",
+  "name": "Ambient Sound Aptero",
+  "model": "models/Ambient_Sound.glb",
+  "tags": ["sound", "ambient", "atmosphere"],
+  "category": "decorations",
+  "parameters": [
+    {
+      "id": "sound",
+      "label": "Sound",
+      "type": "options",
+      "options": [
+        {
+          "value": "TheEpic",
+          "label": "TheEpic"
+        }
+      ],
+      "default": "TheEpic"
+    },
+    {
+      "id": "active",
+      "label": "Auto start",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "loop",
+      "label": "Loop sound",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "actions": [
+    {
+      "id": "activate",
+      "label": "Play",
+      "parameters": []
+    },
+    {
+      "id": "deactivate",
+      "label": "Stop",
+      "parameters": []
+    }
+  ]
+}
