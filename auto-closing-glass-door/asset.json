@@ -1,0 +1,53 @@
+{
+  "id": "cbd002f3-6ac6-4ca8-9736-d7c3ced3ce5c",
+  "name": "Glass Door Aptero",
+  "tags": ["door"],
+  "category": "structures",
+  "parameters": [
+    {
+      "id": "onClickText",
+      "label": "Hover text",
+      "type": "text",
+      "default": "Open/Close"
+    },
+    {
+      "id": "onClick",
+      "label": "When clicked",
+      "type": "actions",
+      "default": "toggle"
+    },
+    {
+      "id": "onOpen",
+      "label": "When opened",
+      "type": "actions"
+    },
+    {
+      "id": "onClose",
+      "label": "When closed",
+      "type": "actions"
+    },
+    {
+      "id": "openDuration",
+      "label": "Opening duration (milliseconds)",
+      "type": "float",
+      "default": 3000
+    }
+  ],
+  "actions": [
+    {
+      "id": "open",
+      "label": "Open",
+      "parameters": []
+    },
+    {
+      "id": "close",
+      "label": "Close",
+      "parameters": []
+    },
+    {
+      "id": "toggle",
+      "label": "Open or Close",
+      "parameters": []
+    }
+  ]
+}

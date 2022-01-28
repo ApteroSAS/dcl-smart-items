@@ -1,0 +1,75 @@
+{
+  "id": "4091c169-627b-4f41-b54c-1702d79e982d",
+  "name": "Vertical Platform GSpot",
+  "tags": [
+    "platform",
+    "vertical",
+    "interactive"
+  ],
+  "category": "structures",
+  "model": "models/Vertical_platform_GSpot.glb",
+  "parameters": [
+    {
+      "id": "speed",
+      "label": "Speed",
+      "type": "slider",
+      "default": 5,
+      "max": 20,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "levels",
+      "label" : "Space separated height of different levels",
+      "type": "text",
+      "default": "5 10"
+    },
+    {
+      "id": "duration",
+      "label" : "Time spent at each level (milliseconds)",
+      "type": "integer",
+      "default": 2000
+    },
+    {
+      "id": "autoStart",
+      "label": "Auto Start",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "onReachEnd",
+      "label": "When end reached",
+      "type": "actions",
+      "default": "goToStart"
+    },
+    {
+      "id": "onReachStart",
+      "label": "When start reached",
+      "type": "actions",
+      "default": "goToEnd"
+    },
+    {
+      "id": "onReachLevel",
+      "label": "When level reached",
+      "type": "actions",
+      "default": "goToNext"
+    }
+  ],
+  "actions": [
+    {
+      "id": "goToEnd",
+      "label": "Go to end",
+      "parameters": []
+    },
+    {
+      "id": "goToStart",
+      "label": "Return to start",
+      "parameters": []
+    },
+    {
+      "id": "goToNext",
+      "label": "Continue to next level",
+      "parameters": []
+    }
+  ]
+}
