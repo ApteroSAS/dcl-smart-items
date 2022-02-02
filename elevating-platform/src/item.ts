@@ -127,7 +127,7 @@ export default class Platform implements IScript<Props> {
         const platform = new Entity(host.name + '-platform')
         platform.setParent(host)
         platform.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-        platform.addComponent(new GLTFShape('models/platform_GSpot.glb'))
+        platform.addComponent(new GLTFShape('models/ascenseur_V3_Gspot.glb'))
         platform.addComponent(
             new Elevator(channel, speed, levelsArray, duration, onReachStart, onReachEnd,onReachLevel)
         )

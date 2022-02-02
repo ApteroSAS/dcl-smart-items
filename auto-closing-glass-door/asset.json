@@ -1,5 +1,5 @@
 {
-  "id": "cbd002f3-6ac6-4ca8-9736-d7c3ced3ce5c",
+  "id": "b85db49d-19c1-4526-85a8-38d2b91e5241",
   "name": "Glass Door Aptero",
   "tags": ["door"],
   "category": "structures",
@@ -31,6 +31,10 @@
       "label": "Opening duration (milliseconds)",
       "type": "float",
       "default": 3000
+    },{
+      "id": "position",
+      "label" : "Space separated coordinates",
+      "type": "text"
     }
   ],
   "actions": [

@@ -6,6 +6,7 @@ export type Props = {
   onClose?: Actions
   onClickText?: string
   openDuration ?: float
+  position ?: string
 }
 
 export default class Button implements IScript<Props> {
@@ -40,6 +41,17 @@ export default class Button implements IScript<Props> {
   spawn(host: Entity, props: Props, channel: IChannel) {
     const door = new Entity(host.name + '-button')
     door.setParent(host)
+    //console.log(props)
+    if(props.position){
+      const coords = props.position.split(" ").map(x => parseFloat(x));
+      if(coords.length >= 3){
+        // @ts-ignore
+        const transform = door._parent.components["engine.transform"];
+        //console.log(door,transform);
+        transform.position = transform.position.add(new Vector3(coords[0],coords[1],coords[2]));
+        //console.log(door,transform);
+      }
+    }
 
     const animator = new Animator()
     const closeClip = new AnimationState('close', { looping: false })
@@ -49,7 +61,7 @@ export default class Button implements IScript<Props> {
     door.addComponent(animator)
     openClip.stop()
 
-    door.addComponent(new GLTFShape('models/porte_GSpot_anim_test_3.glb'))
+    door.addComponent(new GLTFShape('models/Porte_GSpot_Origin2.glb'))
 
     door.addComponent(
         new OnPointerDown(
