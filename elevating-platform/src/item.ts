@@ -20,6 +20,7 @@ export default class Platform implements IScript<Props> {
     changeDirection(entity: Entity, newDirection?: Direction, useTransition = true) {
         const platform = entity.getComponent(Elevator)
         const isRising = platform.direction === 'up'
+        platform.timeSinceLastStop = 0;
 
         // compute new value, don't rerun if already moving in the right direction
         if (newDirection === 'down') {
@@ -32,10 +33,7 @@ export default class Platform implements IScript<Props> {
             platform.direction = 'up';
         }
 
-
-        new Delay(platform.duration, ()=> {
-            // start transition
-            if (useTransition) {
+        if (useTransition) {
                 if (platform.transition === -1) {
                     //Restart motion
                     platform.transition = 0
@@ -43,14 +41,19 @@ export default class Platform implements IScript<Props> {
                     //start from in movement for networking user
                     platform.transition = 1 - platform.transition
                 }
-            } else {
-                platform.transition = 1
-            }
-        })
+        } else {
+            platform.transition = 1
+        }
     }
 
     moveToNext(entity: Entity,useTransition = true){
+
         const platform = entity.getComponent(Elevator)
+        platform.timeSinceLastStop = 0;
+
+        log(platform.timeSinceLastStop);
+        //if(platform.timeSinceLastStop != 0) return;
+
         const isRising = platform.direction === 'up';
         const nextLevelId = platform.nextLevelId;
 
@@ -78,17 +81,16 @@ export default class Platform implements IScript<Props> {
                 platform.direction = 'up';
             }
         }
+
         // start transition
         if (useTransition) {
-            entity.addComponent(new Delay(platform.duration, ()=> {
-                if (platform.transition === -1) {
-                    //Restart motion
-                    platform.transition = 0
-                } else {
-                    //start from in movement for networking user
-                    platform.transition = 1 - platform.transition
-                }
-            }))
+            if (platform.transition === -1) {
+                //Restart motion
+                platform.transition = 0
+            } else {
+                //start from in movement for networking user
+                platform.transition = 1 - platform.transition
+            }
         } else {
             platform.transition = 1
         }
@@ -96,7 +98,9 @@ export default class Platform implements IScript<Props> {
     }
 
     moveToSpecific(entity: Entity, nextLevel: number, newDirection?: Direction, useTransition = true){
+        log("move to ",nextLevel,newDirection)
         const platform = entity.getComponent(Elevator)
+        platform.timeSinceLastStop = 0;
         const isRising = platform.direction === 'up'
 
         platform.direction = newDirection;
@@ -131,6 +135,7 @@ export default class Platform implements IScript<Props> {
         platform.addComponent(
             new Elevator(channel, speed, levelsArray, duration, onReachStart, onReachEnd,onReachLevel)
         )
+        const elevator = platform.getComponent(Elevator);
 
         // add animation
         const animator = new Animator()
@@ -144,32 +149,32 @@ export default class Platform implements IScript<Props> {
         channel.handleAction('goToStart', () => this.changeDirection(platform, 'down'))
         channel.handleAction('goToNext', ()=> this.moveToNext(platform))
 
+//        channel.
 
+        log("summon function");
         // sync initial direction
-        channel.request<Direction>('direction', (direction) =>
-            this.moveToSpecific(platform, platform.getComponent(Elevator).nextLevelId, direction, false)
-        )
-        channel.reply<Direction>(
-            'direction',
-            () => platform.getComponent(Elevator).direction
-        )
+        channel.request<number>('etage', (num) =>  this.moveToSpecific(platform, (levelsArray.length >=num)?num - levelsArray.length:num, (levelsArray.length >=num)?"down":"up", false))
+        channel.reply<number>('etage', () => (elevator.nextLevelId + ((elevator.direction == "down")?levelsArray.length:0)))
+        /*
         // sync initial level
         channel.request<number>('levelId', (level) =>
             this.moveToSpecific(platform, level, platform.getComponent(Elevator).direction, false)
         )
+
         channel.reply<number>(
             'levelId',
             () => platform.getComponent(Elevator).nextLevelId
-        )
+        )*/
 
-        // auto start platform
-        if (autoStart !== false) {
+        // auto start platform if there is no ongoing delay
+        if (autoStart !== false &&  elevator.timeSinceLastStop === 0) {
             const goToNextAction: BaseAction<{}> = {
                 entityName: host.name,
                 actionId: 'goToNext',
                 values: {}
             }
-            channel.sendActions([goToNextAction])
+            //console.log("inite");
+           // channel.sendActions([goToNextAction])
         }
     }
 }

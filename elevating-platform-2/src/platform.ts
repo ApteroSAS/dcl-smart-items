@@ -19,6 +19,7 @@ const startPosition = new Vector3(0, 0, 0)
 export class VerticalPlatformSystem {
   group = engine.getComponentGroup(VerticalPlatform)
   update(dt: number) {
+    Date.now()
     for (const entity of this.group.entities) {
       const platform = entity.getComponent(VerticalPlatform)
       const transform = entity.getComponent(Transform)

@@ -9,31 +9,25 @@ export type Props = {
   position ?: string
 }
 
-export default class Button implements IScript<Props> {
-  //openClip = new AudioClip('sounds/open.mp3')
-  //closeClip = new AudioClip('sounds/close.mp3')
-
+export default class Door implements IScript<Props> {
   active: Record<string, boolean> = {}
 
   init() {}
 
   toggle(entity: Entity, value: boolean, duration:float) {
     if (this.active[entity.name] === value) return
-
-
     const animator = entity.getComponent(Animator)
     const openClip = animator.getClip('open')
     const closeClip = animator.getClip('close')
     openClip.stop()
     closeClip.stop()
     const clip = value ? openClip : closeClip
-
+    clip.play()
     if(value){
       entity.addComponent(new Delay(duration,() => {
         this.toggle(entity, false, duration)}
       ));
     }
-    clip.play()
 
     this.active[entity.name] = value
   }
@@ -41,15 +35,13 @@ export default class Button implements IScript<Props> {
   spawn(host: Entity, props: Props, channel: IChannel) {
     const door = new Entity(host.name + '-button')
     door.setParent(host)
-    //console.log(props)
+
     if(props.position){
       const coords = props.position.split(" ").map(x => parseFloat(x));
       if(coords.length >= 3){
         // @ts-ignore
         const transform = door._parent.components["engine.transform"];
-        //console.log(door,transform);
         transform.position = transform.position.add(new Vector3(coords[0],coords[1],coords[2]));
-        //console.log(door,transform);
       }
     }
 
@@ -61,7 +53,7 @@ export default class Button implements IScript<Props> {
     door.addComponent(animator)
     openClip.stop()
 
-    door.addComponent(new GLTFShape('models/Porte_GSpot_Origin2.glb'))
+    door.addComponent(new GLTFShape('models/Gspot_porte_finale.glb'))
 
     door.addComponent(
         new OnPointerDown(
@@ -76,6 +68,7 @@ export default class Button implements IScript<Props> {
         )
     )
 
+    this.toggle(door, false, props.openDuration)
     this.active[door.name] = false
 
     // handle actions
