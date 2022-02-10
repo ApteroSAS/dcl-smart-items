@@ -5,7 +5,7 @@ const platform = new Platform()
 const spawner = new Spawner<Props>(platform)
 
 spawner.spawn('platform', new Transform({ position: new Vector3(4, 0, 8) }), {
-  distance: 10,
+  duration: 2000,
   speed: 5,
   levels:"0 5 10"
 })
