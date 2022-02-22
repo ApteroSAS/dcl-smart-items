@@ -30,7 +30,7 @@ export default class Door implements IScript<Props> {
     const platform = new Entity(host.name + '-platform')
     platform.setParent(host)
     platform.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-    platform.addComponent(new GLTFShape('models/ascenseur_V3_Gspot.glb'))
+    platform.addComponent(new GLTFShape('models/Gspot_ascenseur_retextured.glb'))
     platform.addComponent(
       new VerticalPlatform(channel, distance, speed,levelsArray,duration, timeSpentWaitingDuringOneLoop + timeSpentMovingDuringOneLoop,durations)
     )

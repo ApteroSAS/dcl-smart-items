@@ -51,9 +51,10 @@ export default class Door implements IScript<Props> {
     animator.addClip(closeClip)
     animator.addClip(openClip)
     door.addComponent(animator)
+    openClip.play()
     openClip.stop()
 
-    door.addComponent(new GLTFShape('models/Gspot_porte_finale.glb'))
+    door.addComponent(new GLTFShape('models/Gspot_porte_retextured.glb'))
 
     door.addComponent(
         new OnPointerDown(
