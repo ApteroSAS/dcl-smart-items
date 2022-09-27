@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5c4cd0d-f1fd-40df-a85f-c79827eff207" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../npc-18/.dclignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/asset.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/item.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/scene.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/src/game.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/src/item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/src/resources.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dclignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/platform_fantasy_horizontal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/game.js.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Horizontal_Platform_Fantasy.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Platform_Fantasy.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scene.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/platform.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform-2/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform-2/src/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform-utc/bin/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform-utc/bin/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform-utc/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform-utc/bin/game.js.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform-utc/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform-utc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform-utc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform-utc/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform-utc/src/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform-utc/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform-utc/src/item.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F4O4EMFZPzsDlLpyKTicwmmX74" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5c4cd0d-f1fd-40df-a85f-c79827eff207" name="Changes" comment="" />
+      <created>1663747700622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663747700622</updated>
+      <workItem from="1663747702392" duration="332000" />
+      <workItem from="1663757444856" duration="294000" />
+      <workItem from="1664262626052" duration="127000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -6,7 +6,7 @@ export type Props = {
   duration?:number //time spent for each levels
 }
 
-export default class Door implements IScript<Props> {
+export default class Platform implements IScript<Props> {
   init() {
     engine.addSystem(new VerticalPlatformSystem())
   }
