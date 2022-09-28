@@ -7,7 +7,6 @@
     "interactive"
   ],
   "category": "structures",
-  "model": "models/Vertical_platform_GSpot.glb",
   "parameters": [
     {
       "id": "speed",

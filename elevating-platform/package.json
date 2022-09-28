@@ -11,7 +11,9 @@
     "ecs:install-next": "npm install --save-dev decentraland-ecs@next"
   },
   "devDependencies": {
-    "decentraland-builder-scripts": "^0.24.0",
-    "decentraland-ecs": "^6.6.1-20201008141239.commit-6001543"
+    "decentraland-ecs": "https://sdk-team-cdn.decentraland.org/@dcl/js-sdk-toolchain/branch/fix/smart-item/decentraland-ecs-6.10.1-2315648551.commit-cdfa111.tgz"
+  },
+  "dependencies": {
+    "decentraland-builder-scripts": "^0.24.0"
   }
 }

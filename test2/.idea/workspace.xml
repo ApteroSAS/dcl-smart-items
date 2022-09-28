@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="044555ef-3d46-47c0-88de-6b24edd7b14a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../gitignore.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../platform_fantasy_horizontal/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../platform_fantasy_horizontal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../platform_fantasy_horizontal/tsconfig.item-base.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../platform_fantasy_horizontal/upgrade-deps.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/images/portraits/charlie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/images/ui/blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/images/ui/buttonE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/images/ui/buttonF.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/images/ui/leftClickIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/images/ui/textPanel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/models/avatar_npc_V2.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/models/robots/charlie.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/sounds/charlie.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/resources.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tsconfig.item-base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-closing-glass-door/bin/game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-closing-glass-door/bin/game.js.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-closing-glass-door/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-closing-glass-door/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-closing-glass-door/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-closing-glass-door/porte.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-closing-glass-door/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-closing-glass-door/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform/asset.json" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform/asset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform/bin/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform/bin/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform/bin/game.js.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform/item.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevating-platform/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../elevating-platform/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../npc-18/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../npc-18/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../npc-18/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../npc-18/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platform_fantasy_horizontal/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../platform_fantasy_horizontal/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FO4KNyG0SjdsqpMLQ0tYY0ivF1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="044555ef-3d46-47c0-88de-6b24edd7b14a" name="Changes" comment="" />
+      <created>1664349731950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664349731950</updated>
+      <workItem from="1664349733202" duration="57000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

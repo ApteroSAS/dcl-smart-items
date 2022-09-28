@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/decentraland/smart-items#readme",
   "dependencies": {
-    "decentraland": "^3.4.5",
+    "decentraland": "^3.12.2",
     "decentraland-builder-scripts": "^0.24.0",
     "decentraland-ecs": "^6.6.3",
     "rimraf": "^3.0.2",

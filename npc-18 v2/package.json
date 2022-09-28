@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My new Decentraland project",
   "scripts": {
+    "version": "dcl -v",
     "start": "dcl start",
     "build": "build-ecs",
     "watch": "build-ecs --watch",
@@ -14,6 +15,10 @@
     "decentraland-ecs": "https://sdk-team-cdn.decentraland.org/@dcl/js-sdk-toolchain/branch/fix/smart-item/decentraland-ecs-6.10.1-2315648551.commit-cdfa111.tgz"
   },
   "dependencies": {
+    "@dcl/npc-scene-utils": "^1.4.0",
     "decentraland-builder-scripts": "^0.24.0"
-  }
+  },
+  "bundleDependencies": [
+    "@dcl/npc-scene-utils"
+  ]
 }

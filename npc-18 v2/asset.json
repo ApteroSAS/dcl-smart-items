@@ -1,0 +1,15 @@
+{
+  "id": "3cf6f19b-457a-4e54-a8c7-398640c8d191",
+  "name": "NPC -18",
+  "category": "structures",
+  "tags": [
+    "cube"
+  ],
+  "parameters": [
+    {
+      "id": "target",
+      "label": "Target teleporter",
+      "type": "entity"
+    }
+  ]
+}
