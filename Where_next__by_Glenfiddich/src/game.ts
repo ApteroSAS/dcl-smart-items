@@ -3,6 +3,7 @@ import { createInventory } from '../node_modules/decentraland-builder-scripts/in
 import Script1 from "../901e4555-8743-49bb-854c-c8b354a3e3e1/src/item"
 import Script2 from "../a747f104-5434-42a8-a543-8739c24cf253/src/item"
 import Script3 from "../55a10ad0-c973-4692-9e20-76270ef4bdcc/src/item"
+//import Script4 from "../15874290-2f97-4d32-af04-7bf5d6f7bb2d/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -79,6 +80,17 @@ gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
 tours.addComponentOrReplace(gltfShape3)
+
+const bordure = new Entity('bordure')
+engine.addEntity(bordure)
+bordure.setParent(_scene)
+bordure.addComponentOrReplace(transform6)
+
+const bordureglb = new GLTFShape("91b9ae01-9278-4a74-84b3-09dd8af578b5/collisions_18_visible.glb")
+bordureglb.withCollisions = true
+bordureglb.isPointerBlocker = true
+bordureglb.visible = true
+bordure.addComponentOrReplace(bordureglb)
 
 const tables = new Entity('tables')
 engine.addEntity(tables)
@@ -195,6 +207,27 @@ gltfShape8.isPointerBlocker = true
 gltfShape8.visible = true
 vdeco.addComponentOrReplace(gltfShape8)
 
+const npc = new Entity('npc')
+engine.addEntity(npc)
+npc.setParent(_scene)
+const transformnpc = new Transform({
+  position: new Vector3(2, 1, 15),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+npc.addComponentOrReplace(transformnpc)
+
+
+const npctarget = new Entity('npctarget')
+engine.addEntity(npctarget)
+npctarget.setParent(_scene)
+const transformnpctarget = new Transform({
+  position: new Vector3(5, 0, 15),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+npctarget.addComponentOrReplace(transformnpctarget)
+
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
@@ -203,12 +236,15 @@ const options = { inventory }
 const script1 = new Script1()
 const script2 = new Script2()
 const script3 = new Script3()
+//const script4 = new Script4()
 // @ts-ignore
 script1.init(options)
 // @ts-ignore
 script2.init(options)
 // @ts-ignore
 script3.init(options)
+// @ts-ignore
+//script4.init(options)
 script1.spawn(radio, {"startOn":true,"volume":0.1,"onClickText":"Radio On/Off","onClick":[{"entityName":"radio","actionId":"activate","values":{}}],"onActivate":[],"customStation":"https://files.aptero.co/api/public/dl/DkGedXSx?inline=true"}, createChannel(channelId, radio, channelBus))
 script2.spawn(videoStream, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream, channelBus))
 script2.spawn(videoStream2, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream2","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream2, channelBus))
