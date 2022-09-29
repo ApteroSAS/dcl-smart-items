@@ -1,37 +1,35 @@
 {
-  "id": "3cf6f19b-457a-4e54-a8c7-398640c8d191",
+  "id": "55a10ad0-c973-4692-9e20-76270ef4bdcc",
   "name": "Test smart item",
   "category": "structures",
   "tags": [
-    "cube"
+    "platform",
+    "vertical",
+    "interactive"
   ],
+  "model": "models/Ascenseur.glb",
   "parameters": [
     {
-      "id": "onOpen",
-      "label": "When opened",
-      "type": "actions"
+      "id": "speed",
+      "label": "Speed",
+      "type": "slider",
+      "default": 5,
+      "max": 20,
+      "min": 0,
+      "step": 1
     },
     {
-      "id": "onClose",
-      "label": "When closed",
-      "type": "actions"
-    }
-  ],
-  "actions": [
-    {
-      "id": "open",
-      "label": "Open",
-      "parameters": []
+      "id": "levels",
+      "label" : "Space separated height of different levels",
+      "type": "text",
+      "default": "0 5 10"
     },
     {
-      "id": "close",
-      "label": "Close",
-      "parameters": []
-    },
-    {
-      "id": "toggle",
-      "label": "Open or Close",
-      "parameters": []
+      "id": "duration",
+      "label" : "Time spent at each level (milliseconds)",
+      "type": "integer",
+      "default": 2000,
+      "min": 0
     }
   ]
 }

@@ -1,73 +1,56 @@
+import { VerticalPlatformSystem, VerticalPlatform } from './platform'
+
 export type Props = {
-    onClick?: Actions
-    onOpen?: Actions
-    onClose?: Actions
-    onClickText?: string
+    speed: number //between levels
+    levels:string //list of level height
+    duration:number //time spent for each levels
 }
 
-export default class TestItem implements IScript<Props> {
-    active: Record<string, boolean> = {}
-
-    init() { }
-
-    toggle(entity: Entity, value: boolean) {
-        if (this.active[entity.name!] === value) return
-
-        const collider = Object.keys(entity.children).map(
-            key => entity.children[key]
-        )[0]
-        if (collider) {
-            collider.addComponentOrReplace(
-                new Transform({
-                    scale: value ? new Vector3(0.5, 0.5, 0.5) : new Vector3(1, 1, 1)
-                })
-            )
-        }
-        this.active[entity.name!] = value
+export default class Platform implements IScript<Props> {
+    init() {
+        engine.addSystem(new VerticalPlatformSystem())
     }
 
     spawn(host: Entity, props: Props, channel: IChannel) {
-        const entity = new Entity(host.name + '-entity')
-        entity.setParent(host)
-        entity.addComponent(new Transform())
-        entity.addComponent(new BoxShape())
+        const { speed,levels, duration} = props
 
-        const collider = new Entity(entity.name! + '-collider')
-        collider.setParent(entity)
-        collider.addComponent(new Transform())
-        collider.addComponent(new BoxShape())
-
-        this.active[entity.name!] = false
-
-        // handle actions
-        channel.handleAction('open', ({ sender }) => {
-            if (!this.active[entity.name!]) {
-                this.toggle(entity, true)
+        const actualSpeed = speed/20 * 1000;
+        const levelsArray = levels.split(" ").map(x => parseFloat(x));
+        const distance = levelsArray[levelsArray.length-1] - levelsArray[0]; //total distance between top and bottom
+        const timeSpentWaitingDuringOneLoop = (levelsArray.length-1 )* duration;
+        const timeSpentMovingDuringOneLoop = distance * actualSpeed;
+        let durations = [];
+        for (let i = 0; i < levelsArray.length; i++) {
+            if(i!=0){//If we moved from a previous level
+                const dist = levelsArray[i] - levelsArray[i-1]
+                durations.push(dist*actualSpeed);//we add the time spent moving
             }
-            if (sender === channel.id) {
-                channel.sendActions(props.onOpen)
-            }
-        })
-        channel.handleAction('close', ({ sender }) => {
-            if (this.active[entity.name!]) {
-                this.toggle(entity, false)
-            }
-            if (sender === channel.id) {
-                channel.sendActions(props.onClose)
-            }
-        })
-        channel.handleAction('toggle', ({ sender }) => {
-            const newValue = !this.active[entity.name!]
-            this.toggle(entity, newValue)
-            if (sender === channel.id) {
-                channel.sendActions(newValue ? props.onOpen : props.onClose)
-            }
-        })
-
-        // sync initial values
-        channel.request<boolean>('isOpen', isOpen =>
-            this.toggle(entity, isOpen)
+            durations.push(duration)//We add the time for that level
+        }
+        const platform = new Entity(host.name + '-platform')
+        platform.setParent(host)
+        platform.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
+        platform.addComponent(new GLTFShape('models/Ascenseur.glb'))
+        platform.addComponent(
+            new VerticalPlatform(channel, distance, speed,levelsArray,duration, timeSpentWaitingDuringOneLoop + timeSpentMovingDuringOneLoop,durations)
         )
-        channel.reply<boolean>('isOpen', () => this.active[entity.name!])
+
+        // add animation
+        const animator = new Animator()
+        const clip = new AnimationState('main', { looping: true })
+        animator.addClip(clip)
+        platform.addComponent(animator)
+        clip.play()
+
+        // //sync initial values
+        // channel.request<number>('yourtime', othersDate =>
+        //     Elevator.timeDelta = othersDate - Date.now()
+        // )
+        //
+        // channel.reply<number>(
+        //   'yourtime',
+        //   () => (Date.now()+Elevator.timeDelta)
+        // )
+
     }
-} 
+}

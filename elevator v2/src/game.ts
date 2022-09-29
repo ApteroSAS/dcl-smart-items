@@ -1,26 +1,11 @@
 import { Spawner } from '../node_modules/decentraland-builder-scripts/spawner'
-import Door, { Props } from './item'
+import Platform, { Props } from './item'
 
-const door = new Door()
-const spawner = new Spawner<Props>(door)
+const platform = new Platform()
+const spawner = new Spawner<Props>(platform)
 
-spawner.spawn(
-    'door',
-    new Transform({
-        position: new Vector3(4, 0, 8)
-    }),
-    {
-        onClick: [
-            {
-                actionId: 'toggle',
-                entityName: 'door',
-                values: {}
-            }
-        ]
-    }
-)
-
-const entity = new Entity()
-entity.addComponent(new BoxShape())
-entity.addComponent(new Transform())
-engine.addEntity(entity)
+spawner.spawn('platform', new Transform({ position: new Vector3(4, 0, 8) }), {
+    duration: 2000,
+    speed: 5,
+    levels:"0 5 10"
+})
