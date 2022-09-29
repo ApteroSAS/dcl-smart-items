@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "My new Decentraland project",
   "scripts": {
-    "version": "dcl -v",
     "start": "dcl start",
     "build": "build-ecs",
     "watch": "build-ecs --watch",

@@ -1,6 +1,7 @@
-import { NPC, NPCDelay } from '@dcl/npc-scene-utils'
-import { Dialog } from '@dcl/npc-scene-utils'
-import { movePlayerTo } from '@decentraland/RestrictedActions'
+import { Dialog } from './npc-scene-utils/utils/types'
+import { NPC } from './npc-scene-utils/npc/npc'
+import { NPCDelay } from './npc-scene-utils/utils/timerComponents'
+//import { movePlayerTo } from '@decentraland/RestrictedActions'
 
 export type Props = {
     target?:Entity
@@ -36,6 +37,7 @@ export default class Bot18 implements IScript<Props> {
                 text: 'Good, You can enter. Have a nice day. ',
                 isEndOfDialog: true,
                 triggeredByNext: () => {
+                    // @ts-ignore
                     movePlayerTo(target.getComponent(Transform).position)
                     this.npc.playAnimation('hello', true, 2)
                 }
@@ -66,6 +68,7 @@ export default class Bot18 implements IScript<Props> {
             },
             {
                 idleAnim:"idle",
+                faceUser:true,
                 portrait: {
                     path: 'images/portraits/charlie-avatar.png',
                     height: 256,
