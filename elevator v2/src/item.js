@@ -1,4 +1,3 @@
-@Component("VerticalPlatform")
 class VerticalPlatform {
     transition: number = -1
     delay: number = -1 // this is a delay to stop the animation, to prevent a flickr in the transition
@@ -118,7 +117,7 @@ export default class Platform implements IScript<Props> {
         const platform = new Entity(host.name + '-platform')
         platform.setParent(host)
         platform.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-        platform.addComponent(new GLTFShape("models/Ascenseur.glb"))
+        platform.addComponent(new GLTFShape('models/Ascenseur.glb'))
         platform.addComponent(
             new VerticalPlatform(channel, distance, speed,levelsArray,duration, timeSpentWaitingDuringOneLoop + timeSpentMovingDuringOneLoop,durations)
         )
@@ -130,6 +129,15 @@ export default class Platform implements IScript<Props> {
         platform.addComponent(animator)
         clip.play()
 
+        // //sync initial values
+        // channel.request<number>('yourtime', othersDate =>
+        //     Elevator.timeDelta = othersDate - Date.now()
+        // )
+        //
+        // channel.reply<number>(
+        //   'yourtime',
+        //   () => (Date.now()+Elevator.timeDelta)
+        // )
 
     }
 }

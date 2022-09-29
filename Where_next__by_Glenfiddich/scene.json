@@ -1,4 +1,7 @@
 {
+  "requiredPermissions": [
+  "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+],
   "display": {
     "title": "Where next? by Glenfiddich",
     "favicon": "favicon_asset",
@@ -13,9 +16,9 @@
   "tags": [],
   "scene": {
     "parcels": [
-      "0,0"
+      "-14,-13"
     ],
-    "base": "0,0"
+    "base": "-14,-13"
   },
   "source": {
     "version": 1,

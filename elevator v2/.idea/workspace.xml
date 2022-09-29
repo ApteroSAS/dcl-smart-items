@@ -2,15 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b85e1515-5166-44ef-9034-aae958a5cc98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Ascenseur.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/platform.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset.json" beforeDir="false" afterPath="$PROJECT_DIR$/asset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/src/item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../npc-18 v2/src/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/.dclignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/.dclignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/bin/game.js.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/a747f104-5434-42a8-a543-8739c24cf253/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/a747f104-5434-42a8-a543-8739c24cf253/bin/game.js.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/scene.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/scene.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/src/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item.zip" beforeDir="false" afterPath="$PROJECT_DIR$/item.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/platform.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../npc-18 v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../npc-18 v2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../npc-18 v2/asset.json" beforeDir="false" afterPath="$PROJECT_DIR$/../npc-18 v2/asset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../npc-18 v2/npc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../npc-18 v2/item.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../npc-18 v2/item.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../npc-18 v2/scene.json" beforeDir="false" afterPath="$PROJECT_DIR$/../npc-18 v2/scene.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../npc-18 v2/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../npc-18 v2/src/game.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +46,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ArthurMOUGIN\Documents\Repos\dcl-smart-items\elevator v2\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ArthurMOUGIN\Documents\Repos\dcl-smart-items\elevator v2\models" />
     </key>
@@ -52,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664432665818</updated>
       <workItem from="1664432667012" duration="3940000" />
+      <workItem from="1664443839959" duration="6280000" />
     </task>
     <servers />
   </component>

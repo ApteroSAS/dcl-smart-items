@@ -6,9 +6,11 @@ import Script3 from "../55a10ad0-c973-4692-9e20-76270ef4bdcc/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
+const quater:Quaternion = new Quaternion();
+    Quaternion.FromEulerAnglesRef(0, -90, 0,quater)
 const transform = new Transform({
-  position: new Vector3(0, 0, 0),
-  rotation: new Quaternion(0, 0, 0, 1),
+  position: new Vector3(16, 0, ),
+  rotation: quater,
   scale: new Vector3(1, 1, 1)
 })
 _scene.addComponentOrReplace(transform)
@@ -132,7 +134,7 @@ const transform10 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 canapes.addComponentOrReplace(transform10)
-const gltfShape7 = new GLTFShape("0def7fac-7825-457b-a060-d1321e5c4b8d/canapes.glb")
+const gltfShape7 = new GLTFShape("0def7fac-7825-457b-a060-d1321e5c4b8d/canape_vert.glb")
 gltfShape7.withCollisions = true
 gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
@@ -158,15 +160,15 @@ const transform12 = new Transform({
 })
 videoStream3.addComponentOrReplace(transform12)
 
-const testSmartItem = new Entity('testSmartItem')
-engine.addEntity(testSmartItem)
-testSmartItem.setParent(_scene)
+const Elevator = new Entity('Elevator')
+engine.addEntity(Elevator)
+Elevator.setParent(_scene)
 const transform13 = new Transform({
   position: new Vector3(14.5, 0, 13.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-testSmartItem.addComponentOrReplace(transform13)
+Elevator.addComponent(transform13)
 
 const videoStream4 = new Entity('videoStream4')
 engine.addEntity(videoStream4)
@@ -201,12 +203,16 @@ const options = { inventory }
 const script1 = new Script1()
 const script2 = new Script2()
 const script3 = new Script3()
+// @ts-ignore
 script1.init(options)
+// @ts-ignore
 script2.init(options)
+// @ts-ignore
 script3.init(options)
-script1.spawn(radio, {"startOn":true,"volume":0.3,"onClickText":"Radio On/Off","onClick":[{"entityName":"radio","actionId":"activate","values":{}}],"onActivate":[],"customStation":"https://files.aptero.co/api/public/dl/DkGedXSx?inline=true"}, createChannel(channelId, radio, channelBus))
+script1.spawn(radio, {"startOn":true,"volume":0.1,"onClickText":"Radio On/Off","onClick":[{"entityName":"radio","actionId":"activate","values":{}}],"onActivate":[],"customStation":"https://files.aptero.co/api/public/dl/DkGedXSx?inline=true"}, createChannel(channelId, radio, channelBus))
 script2.spawn(videoStream, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream, channelBus))
 script2.spawn(videoStream2, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream2","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream2, channelBus))
 script2.spawn(videoStream3, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream3","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream3, channelBus))
-script3.spawn(testSmartItem, {"speed":5,"levels":"0 6 10 14 18","duration":2000}, createChannel(channelId, testSmartItem, channelBus))
+//script3.spawn(Elevator, {"speed":3,"levels":"0 6 10 14 18","duration":2000}, createChannel(channelId, Elevator, channelBus))
+script3.spawn(Elevator, {"speed":5,"levels":"0 6.02 9.96 14.07 18.8","duration":2000}, createChannel(channelId, Elevator, channelBus))
 script2.spawn(videoStream4, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream4","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream4, channelBus))

@@ -5,3 +5,4 @@ platform_scifi_vertical/node_modules/
 elevating-platform-utc/node_modules/
 */node_modules/
 node_modules/
+*.env

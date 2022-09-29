@@ -1,7 +1,7 @@
 import { Dialog } from './npc-scene-utils/utils/types'
 import { NPC } from './npc-scene-utils/npc/npc'
 import { NPCDelay } from './npc-scene-utils/utils/timerComponents'
-import {movePlayerTo} from "@decentraland/RestrictedActions";
+//import {movePlayerTo} from "@decentraland/RestrictedActions";
 
 export type Props = {
     target?:Entity
@@ -37,7 +37,7 @@ export default class Bot18 implements IScript<Props> {
                 text: 'Good, You can enter. Have a nice day. ',
                 isEndOfDialog: true,
                 triggeredByNext: () => {
-                    movePlayerTo(target.getComponent(Transform).position)
+                   // movePlayerTo(target.getComponent(Transform).position)
                     this.npc.playAnimation('hello', true, 2)
                 }
             },

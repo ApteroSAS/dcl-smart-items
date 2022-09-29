@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9591505c-104c-4a00-a4ae-4b9a7cc5cfaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/src/item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elevator v2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elevator v2/src/item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/.dclignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/.dclignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/bin/game.js.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/a747f104-5434-42a8-a543-8739c24cf253/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/a747f104-5434-42a8-a543-8739c24cf253/bin/game.js.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/scene.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/scene.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/src/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevator v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevator v2/item.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/item.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevator v2/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/src/item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elevator v2/src/platform.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/src/platform.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset.json" beforeDir="false" afterPath="$PROJECT_DIR$/asset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item.zip" beforeDir="false" afterPath="$PROJECT_DIR$/item.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scene.json" beforeDir="false" afterPath="$PROJECT_DIR$/scene.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +47,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../elevating-platform-utc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ArthurMOUGIN\Documents\Repos\dcl-smart-items\npc-18 v2\src" />
       <recent name="C:\Users\ArthurMOUGIN\Documents\Repos\dcl-smart-items\test\images\portraits" />
       <recent name="C:\Users\ArthurMOUGIN\Documents\Repos\dcl-smart-items\test\sounds" />
       <recent name="C:\Users\ArthurMOUGIN\Documents\Repos\dcl-smart-items\test\images\ui" />
@@ -93,12 +116,18 @@
       <workItem from="1664267606020" duration="10106000" />
       <workItem from="1664347679079" duration="8908000" />
       <workItem from="1664367865618" duration="8433000" />
-      <workItem from="1664432157908" duration="5151000" />
+      <workItem from="1664432157908" duration="8671000" />
+      <workItem from="1664458887687" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/item.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
