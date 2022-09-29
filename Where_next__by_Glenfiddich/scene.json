@@ -1,0 +1,34 @@
+{
+  "display": {
+    "title": "Where next? by Glenfiddich",
+    "favicon": "favicon_asset",
+    "navmapThumbnail": "scene-thumbnail.png"
+  },
+  "owner": "",
+  "contact": {
+    "name": "Ced#19e6",
+    "email": ""
+  },
+  "main": "bin/game.js",
+  "tags": [],
+  "scene": {
+    "parcels": [
+      "0,0"
+    ],
+    "base": "0,0"
+  },
+  "source": {
+    "version": 1,
+    "origin": "builder",
+    "projectId": "f6af1882-9694-4c34-9f47-eef81e0e4e96",
+    "point": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": "east",
+    "layout": {
+      "rows": 1,
+      "cols": 1
+    }
+  }
+}

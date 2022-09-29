@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9591505c-104c-4a00-a4ae-4b9a7cc5cfaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../elevator v2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../elevator v2/models/Ascenseur.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../elevator v2/src/platform.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elevator v2/asset.json" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/asset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elevator v2/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/src/game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elevator v2/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/src/item.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset.json" beforeDir="false" afterPath="$PROJECT_DIR$/asset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/npc.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +93,7 @@
       <workItem from="1664267606020" duration="10106000" />
       <workItem from="1664347679079" duration="8908000" />
       <workItem from="1664367865618" duration="8433000" />
-      <workItem from="1664432157908" duration="4290000" />
+      <workItem from="1664432157908" duration="5151000" />
     </task>
     <servers />
   </component>
