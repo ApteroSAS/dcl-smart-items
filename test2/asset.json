@@ -7,31 +7,9 @@
   ],
   "parameters": [
     {
-      "id": "onOpen",
-      "label": "When opened",
-      "type": "actions"
-    },
-    {
-      "id": "onClose",
-      "label": "When closed",
-      "type": "actions"
-    }
-  ],
-  "actions": [
-    {
-      "id": "open",
-      "label": "Open",
-      "parameters": []
-    },
-    {
-      "id": "close",
-      "label": "Close",
-      "parameters": []
-    },
-    {
-      "id": "toggle",
-      "label": "Open or Close",
-      "parameters": []
+      "id": "trigger",
+      "label": "Object to listen to clicks",
+      "type": "entity"
     }
   ]
 }

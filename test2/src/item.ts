@@ -5,7 +5,7 @@ export type Props = {
     onClickText?: string
 }
 
-export default class TestItem implements IScript<Props> {
+export default class dialogElement implements IScript<Props> {
     active: Record<string, boolean> = {}
 
     init() { }

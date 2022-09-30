@@ -2,45 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9591505c-104c-4a00-a4ae-4b9a7cc5cfaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/asset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/bin/game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/bin/game.js.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/portraits/charlie-avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/portraits/charlie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/blank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/buttonE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/buttonF.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/leftClickIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/textPanel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/models/avatar_npc_V2.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/models/robots/charlie.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/scene.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/sounds/Hi.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/sounds/charlie.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/src/item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/src/item.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../elevator v2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../elevator v2/src/item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/.dclignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/.dclignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/0def7fac-7825-457b-a060-d1321e5c4b8d/canapes.glb" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/0def7fac-7825-457b-a060-d1321e5c4b8d/canape_vert.glb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/bin/game.js.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/a747f104-5434-42a8-a543-8739c24cf253/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/a747f104-5434-42a8-a543-8739c24cf253/bin/game.js.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/91b9ae01-9278-4a74-84b3-09dd8af578b5/collisions_18.glb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/bin/game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/bin/game.js.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/portraits/charlie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/buttonE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/buttonF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/leftClickIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/ui/textPanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/models/robots/charlie.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/sounds/charlie.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/src/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/15874290-2f97-4d32-af04-7bf5d6f7bb2d/src/item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/55a10ad0-c973-4692-9e20-76270ef4bdcc/bin/game.js.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/901e4555-8743-49bb-854c-c8b354a3e3e1/models/radio.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/901e4555-8743-49bb-854c-c8b354a3e3e1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/901e4555-8743-49bb-854c-c8b354a3e3e1/sounds/click.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/901e4555-8743-49bb-854c-c8b354a3e3e1/src/item.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/901e4555-8743-49bb-854c-c8b354a3e3e1/src/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/91b9ae01-9278-4a74-84b3-09dd8af578b5/collisions_18_visible.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/a747f104-5434-42a8-a543-8739c24cf253/bin/game.js.lib" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/scene.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/scene.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/bin/game.js.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/src/game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elevator v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elevator v2/item.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/item.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elevator v2/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/src/item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elevator v2/src/platform.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../elevator v2/src/platform.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Where_next__by_Glenfiddich/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset.json" beforeDir="false" afterPath="$PROJECT_DIR$/asset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item.zip" beforeDir="false" afterPath="$PROJECT_DIR$/item.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portraits/charlie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ui/blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ui/buttonE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ui/buttonF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ui/leftClickIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ui/textPanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/robots/charlie.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/charlie.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/npc/faceUserSystem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/npc/move.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/npc/npc.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/trigger/triggerSystem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/ui/bubble.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/ui/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/ui/resources.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/utils/default-ui-components.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/utils/timerComponents.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/npc-scene-utils/utils/types.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +144,8 @@
       <workItem from="1664347679079" duration="8908000" />
       <workItem from="1664367865618" duration="8433000" />
       <workItem from="1664432157908" duration="8671000" />
-      <workItem from="1664458887687" duration="1190000" />
+      <workItem from="1664458887687" duration="1247000" />
+      <workItem from="1664520166833" duration="7859000" />
     </task>
     <servers />
   </component>

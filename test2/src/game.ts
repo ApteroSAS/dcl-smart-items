@@ -1,7 +1,7 @@
 import { Spawner } from '../node_modules/decentraland-builder-scripts/spawner'
-import Door, { Props } from './item'
+import DialogElement, { Props } from './item'
 
-const door = new Door()
+const dialogElement = new DialogElement()
 const spawner = new Spawner<Props>(door)
 
 spawner.spawn(
@@ -10,13 +10,7 @@ spawner.spawn(
         position: new Vector3(4, 0, 8)
     }),
     {
-        onClick: [
-            {
-                actionId: 'toggle',
-                entityName: 'door',
-                values: {}
-            }
-        ]
+
     }
 )
 

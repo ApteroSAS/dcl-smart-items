@@ -1,9 +1,8 @@
 import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
 import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
-import Script1 from "../901e4555-8743-49bb-854c-c8b354a3e3e1/src/item"
 import Script2 from "../a747f104-5434-42a8-a543-8739c24cf253/src/item"
 import Script3 from "../55a10ad0-c973-4692-9e20-76270ef4bdcc/src/item"
-//import Script4 from "../15874290-2f97-4d32-af04-7bf5d6f7bb2d/src/item"
+import Script4 from "../15874290-2f97-4d32-af04-7bf5d6f7bb2d/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -46,16 +45,6 @@ gltfShape2.isPointerBlocker = true
 gltfShape2.visible = true
 imagesCerf.addComponentOrReplace(gltfShape2)
 
-const radio = new Entity('radio')
-engine.addEntity(radio)
-radio.setParent(_scene)
-const transform4 = new Transform({
-  position: new Vector3(2.5, 6.5, 11),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0000004768371582, 1, 1.0000004768371582)
-})
-radio.addComponentOrReplace(transform4)
-
 const videoStream = new Entity('videoStream')
 engine.addEntity(videoStream)
 videoStream.setParent(_scene)
@@ -81,12 +70,16 @@ gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
 tours.addComponentOrReplace(gltfShape3)
 
+const transformbordure = new Transform({
+  position: new Vector3(8, 0, 8),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(0.99, 0.99, 0.99)
+})
 const bordure = new Entity('bordure')
 engine.addEntity(bordure)
 bordure.setParent(_scene)
-bordure.addComponentOrReplace(transform6)
-
-const bordureglb = new GLTFShape("91b9ae01-9278-4a74-84b3-09dd8af578b5/collisions_18_visible.glb")
+bordure.addComponentOrReplace(transformbordure)
+const bordureglb = new GLTFShape("91b9ae01-9278-4a74-84b3-09dd8af578b5/collisions_18.glb")
 bordureglb.withCollisions = true
 bordureglb.isPointerBlocker = true
 bordureglb.visible = true
@@ -211,44 +204,40 @@ const npc = new Entity('npc')
 engine.addEntity(npc)
 npc.setParent(_scene)
 const transformnpc = new Transform({
-  position: new Vector3(2, 1, 15),
+  position: new Vector3(2, 0, 15),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
 npc.addComponentOrReplace(transformnpc)
 
-
 const npctarget = new Entity('npctarget')
 engine.addEntity(npctarget)
-npctarget.setParent(_scene)
 const transformnpctarget = new Transform({
-  position: new Vector3(5, 0, 15),
+  position: new Vector3(2, 0, 5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
 npctarget.addComponentOrReplace(transformnpctarget)
+//npctarget.addComponent(new BoxShape())
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
 const options = { inventory }
 
-const script1 = new Script1()
 const script2 = new Script2()
 const script3 = new Script3()
-//const script4 = new Script4()
-// @ts-ignore
-script1.init(options)
-// @ts-ignore
+const script4 = new Script4()
+//@ts-ignore
 script2.init(options)
-// @ts-ignore
+//@ts-ignore
 script3.init(options)
-// @ts-ignore
-//script4.init(options)
-script1.spawn(radio, {"startOn":true,"volume":0.1,"onClickText":"Radio On/Off","onClick":[{"entityName":"radio","actionId":"activate","values":{}}],"onActivate":[],"customStation":"https://files.aptero.co/api/public/dl/DkGedXSx?inline=true"}, createChannel(channelId, radio, channelBus))
+//@ts-ignore
+script4.init(options)
 script2.spawn(videoStream, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream, channelBus))
 script2.spawn(videoStream2, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream2","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream2, channelBus))
 script2.spawn(videoStream3, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream3","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream3, channelBus))
 //script3.spawn(Elevator, {"speed":3,"levels":"0 6 10 14 18","duration":2000}, createChannel(channelId, Elevator, channelBus))
 script3.spawn(Elevator, {"speed":5,"levels":"0 6.02 9.96 14.07 18.8","duration":2000}, createChannel(channelId, Elevator, channelBus))
 script2.spawn(videoStream4, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream4","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream4, channelBus))
+script4.spawn(npc,{target:npctarget}, createChannel(channelId, Elevator, channelBus))

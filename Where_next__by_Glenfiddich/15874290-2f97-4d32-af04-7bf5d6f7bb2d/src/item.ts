@@ -1,8 +1,7 @@
-import { Dialog } from './npc-scene-utils/utils/types'
-import { NPC } from './npc-scene-utils/npc/npc'
-import { NPCDelay } from './npc-scene-utils/utils/timerComponents'
-//import {movePlayerTo} from "@decentraland/RestrictedActions";
-
+import {movePlayerTo} from "@decentraland/RestrictedActions";
+import { Dialog } from '@dcl/npc-scene-utils'
+import { NPCDelay } from '@dcl/npc-scene-utils'
+import { NPC } from '@dcl/npc-scene-utils'
 export type Props = {
     target?:Entity
 }
@@ -34,13 +33,14 @@ export default class Bot18 implements IScript<Props> {
                 }
             },
             {
-                text: 'Good, You can enter. Have a nice day. ',
+                text: 'Good, You can enter. Enjoy your stay !',
                 isEndOfDialog: true,
                 triggeredByNext: () => {
-                   // movePlayerTo(target.getComponent(Transform).position)
+                    movePlayerTo(target.getComponent(Transform).position)
                     this.npc.playAnimation('hello', true, 2)
                 }
-            },
+            }
+
         ]
 
         this.npc = new NPC(
@@ -48,7 +48,7 @@ export default class Bot18 implements IScript<Props> {
                 position: new Vector3(0, 0, 0),
                 rotation: Quaternion.Euler(0, 0, 0)
             },
-            'models/avatar_npc_V2.glb',
+            '15874290-2f97-4d32-af04-7bf5d6f7bb2d/models/avatar_npc_V2.glb',
             () => {
                 // animations
                 this.npc.playAnimation('salut_formel', true, 2)
@@ -60,7 +60,7 @@ export default class Bot18 implements IScript<Props> {
                 )
                 engine.addEntity(dummyent)
                 // sound
-                this.npc.addComponentOrReplace(new AudioSource(new AudioClip('sounds/Hi.mp3')))
+                this.npc.addComponentOrReplace(new AudioSource(new AudioClip('15874290-2f97-4d32-af04-7bf5d6f7bb2d/sounds/Hi.mp3')))
                 this.npc.getComponent(AudioSource).playOnce()
                 // dialog UI
                 this.npc.talk(dialog)
@@ -68,8 +68,9 @@ export default class Bot18 implements IScript<Props> {
             {
                 idleAnim:"idle",
                 faceUser:true,
+                reactDistance:4,
                 portrait: {
-                    path: 'images/portraits/charlie-avatar.png',
+                    path: '15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/portraits/charlie-avatar.png',
                     height: 256,
                     width: 256,
                     section: {
