@@ -7,7 +7,7 @@
     "interactive"
   ],
   "category": "structures",
-  "model": "models/Vertical_platform_GSpot.glb",
+  "model": "models/Ascenseur.glb",
   "parameters": [
     {
       "id": "speed",
@@ -31,7 +31,5 @@
       "default": 2000,
       "min": 0
     }
-  ],
-  "actions": [
   ]
 }

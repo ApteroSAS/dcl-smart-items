@@ -69,7 +69,6 @@ gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
 tours.addComponentOrReplace(gltfShape3)
-
 const transformbordure = new Transform({
   position: new Vector3(8, 0, 8),
   rotation: new Quaternion(0, 0, 0, 1),
@@ -139,7 +138,8 @@ const transform10 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 canapes.addComponentOrReplace(transform10)
-const gltfShape7 = new GLTFShape("0def7fac-7825-457b-a060-d1321e5c4b8d/canape_vert.glb")
+
+const gltfShape7 = new GLTFShape("0def7fac-7825-457b-a060-d1321e5c4b8d/canape.glb")
 gltfShape7.withCollisions = true
 gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
@@ -218,7 +218,21 @@ const transformnpctarget = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 npctarget.addComponentOrReplace(transformnpctarget)
-//npctarget.addComponent(new BoxShape())
+
+const panneau = new Entity('npc')
+engine.addEntity(panneau)
+panneau.setParent(_scene)
+const transformpanneau = new Transform({
+  position: new Vector3(6, 0, 6.5),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.4, 1.4, 1.4)
+})
+const gltfpanneau = new GLTFShape("eb71bd12-743d-4263-be48-d3b5a1d50632/panneau.glb")
+gltfpanneau.withCollisions = true
+gltfpanneau.isPointerBlocker = true
+gltfpanneau.visible = true
+panneau.addComponentOrReplace(transformpanneau)
+panneau.addComponentOrReplace(gltfpanneau)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
