@@ -48,7 +48,7 @@ export default class Bot18 implements IScript<Props> {
                 position: new Vector3(0, 0, 0),
                 rotation: Quaternion.Euler(0, 0, 0)
             },
-            '15874290-2f97-4d32-af04-7bf5d6f7bb2d/models/avatar_npc_V2.glb',
+            'src/smart-items/npc/models/avatar_npc_V2.glb',
             () => {
                 // animations
                 this.npc.playAnimation('salut_formel', true, 2)
@@ -60,7 +60,7 @@ export default class Bot18 implements IScript<Props> {
                 )
                 engine.addEntity(dummyent)
                 // sound
-                this.npc.addComponentOrReplace(new AudioSource(new AudioClip('15874290-2f97-4d32-af04-7bf5d6f7bb2d/sounds/Hi.mp3')))
+                this.npc.addComponentOrReplace(new AudioSource(new AudioClip('src/smart-items/npc/sounds/Hi.mp3')))
                 this.npc.getComponent(AudioSource).playOnce()
                 // dialog UI
                 this.npc.talk(dialog)
@@ -70,7 +70,7 @@ export default class Bot18 implements IScript<Props> {
                 faceUser:true,
                 reactDistance:4,
                 portrait: {
-                    path: '15874290-2f97-4d32-af04-7bf5d6f7bb2d/images/portraits/charlie-avatar.png',
+                    path: 'src/smart-items/npc/images/charlie-avatar.png',
                     height: 256,
                     width: 256,
                     section: {

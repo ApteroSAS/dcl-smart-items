@@ -1,8 +1,9 @@
 import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
 import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
-import Script2 from "../a747f104-5434-42a8-a543-8739c24cf253/src/item"
-import Script3 from "../55a10ad0-c973-4692-9e20-76270ef4bdcc/src/item"
-import Script4 from "../15874290-2f97-4d32-af04-7bf5d6f7bb2d/src/item"
+import StreamScript from "./smart-items/stream/src/item"
+import ElevatorScript from "./smart-items/elevator/src/item"
+import NPCscript from "./smart-items/npc/src/item"
+
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -18,7 +19,7 @@ _scene.addComponentOrReplace(transform)
 const entity = new Entity('entity')
 engine.addEntity(entity)
 entity.setParent(_scene)
-const gltfShape = new GLTFShape("f2e78a49-b1b8-4643-97b4-237b15e4f8cb/tour_barman_sol.glb")
+const gltfShape = new GLTFShape("assets/tour_barman_sol.glb")
 gltfShape.withCollisions = true
 gltfShape.isPointerBlocker = true
 gltfShape.visible = true
@@ -39,7 +40,7 @@ const transform3 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 imagesCerf.addComponentOrReplace(transform3)
-const gltfShape2 = new GLTFShape("4a69bcb1-7e2a-4462-8bfd-2e50d1991b56/images_cerf.glb")
+const gltfShape2 = new GLTFShape("assets/images_cerf.glb")
 gltfShape2.withCollisions = true
 gltfShape2.isPointerBlocker = true
 gltfShape2.visible = true
@@ -64,7 +65,7 @@ const transform6 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 tours.addComponentOrReplace(transform6)
-const gltfShape3 = new GLTFShape("04ec303f-a599-4f42-9daf-a54e1475220c/tours4.glb")
+const gltfShape3 = new GLTFShape("assets/tours4.glb")
 gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
@@ -78,7 +79,7 @@ const bordure = new Entity('bordure')
 engine.addEntity(bordure)
 bordure.setParent(_scene)
 bordure.addComponentOrReplace(transformbordure)
-const bordureglb = new GLTFShape("91b9ae01-9278-4a74-84b3-09dd8af578b5/collisions_18.glb")
+const bordureglb = new GLTFShape("assets/collisions_18.glb")
 bordureglb.withCollisions = true
 bordureglb.isPointerBlocker = true
 bordureglb.visible = true
@@ -93,7 +94,7 @@ const transform7 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 tables.addComponentOrReplace(transform7)
-const gltfShape4 = new GLTFShape("04d37408-2b3a-4174-85ea-27108b01b9dd/TABLES.glb")
+const gltfShape4 = new GLTFShape("assets/TABLES.glb")
 gltfShape4.withCollisions = true
 gltfShape4.isPointerBlocker = true
 gltfShape4.visible = true
@@ -108,7 +109,7 @@ const transform8 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 bars.addComponentOrReplace(transform8)
-const gltfShape5 = new GLTFShape("f6b66985-eb9d-40bf-b918-6e70e0e22ae4/Bars.glb")
+const gltfShape5 = new GLTFShape("assets/Bars.glb")
 gltfShape5.withCollisions = true
 gltfShape5.isPointerBlocker = true
 gltfShape5.visible = true
@@ -123,7 +124,7 @@ const transform9 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 verre.addComponentOrReplace(transform9)
-const gltfShape6 = new GLTFShape("2a4a906c-7167-4d4d-925d-c12d6d46ce4d/verre.glb")
+const gltfShape6 = new GLTFShape("assets/verre.glb")
 gltfShape6.withCollisions = true
 gltfShape6.isPointerBlocker = true
 gltfShape6.visible = true
@@ -139,7 +140,7 @@ const transform10 = new Transform({
 })
 canapes.addComponentOrReplace(transform10)
 
-const gltfShape7 = new GLTFShape("0def7fac-7825-457b-a060-d1321e5c4b8d/canape.glb")
+const gltfShape7 = new GLTFShape("assets/canape.glb")
 gltfShape7.withCollisions = true
 gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
@@ -194,7 +195,7 @@ const transform15 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 vdeco.addComponentOrReplace(transform15)
-const gltfShape8 = new GLTFShape("a42c7743-4273-4361-84a3-7e003384e932/V.glb")
+const gltfShape8 = new GLTFShape("assets/V.glb")
 gltfShape8.withCollisions = true
 gltfShape8.isPointerBlocker = true
 gltfShape8.visible = true
@@ -219,39 +220,40 @@ const transformnpctarget = new Transform({
 })
 npctarget.addComponentOrReplace(transformnpctarget)
 
-const panneau = new Entity('npc')
-engine.addEntity(panneau)
-panneau.setParent(_scene)
-const transformpanneau = new Transform({
-  position: new Vector3(6, 0, 6.5),
+const panneaux2 = new Entity('panneaux2')
+engine.addEntity(panneaux2)
+panneaux2.setParent(_scene)
+const transformpanneaux2 = new Transform({
+  position: new Vector3(8, 0, 8),
   rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1.4, 1.4, 1.4)
+  scale: new Vector3(1, 1, 1)
 })
-const gltfpanneau = new GLTFShape("eb71bd12-743d-4263-be48-d3b5a1d50632/panneau.glb")
-gltfpanneau.withCollisions = true
-gltfpanneau.isPointerBlocker = true
-gltfpanneau.visible = true
-panneau.addComponentOrReplace(transformpanneau)
-panneau.addComponentOrReplace(gltfpanneau)
+const gltfpanneaux2 = new GLTFShape("assets/panneaux.glb")
+gltfpanneaux2.withCollisions = true
+gltfpanneaux2.isPointerBlocker = true
+gltfpanneaux2.visible = true
+panneaux2.addComponentOrReplace(transformpanneaux2)
+panneaux2.addComponentOrReplace(gltfpanneaux2)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
 const options = { inventory }
 
-const script2 = new Script2()
-const script3 = new Script3()
-const script4 = new Script4()
+const streamScript = new StreamScript()
+const elevatorscript = new ElevatorScript()
+const npcscript = new NPCscript()
 //@ts-ignore
-script2.init(options)
+streamScript.init(options)
 //@ts-ignore
-script3.init(options)
+elevatorscript.init(options)
 //@ts-ignore
-script4.init(options)
-script2.spawn(videoStream, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream, channelBus))
-script2.spawn(videoStream2, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream2","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream2, channelBus))
-script2.spawn(videoStream3, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream3","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream3, channelBus))
+npcscript.init(options)
+
+streamScript.spawn(videoStream, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/Qme6yKmrju3KTmeAoPHbtgGWrMAEriPLp1AdE6dn1Mwrb4?filename=GLENFIDDICHxRYCHARSKI_202201003_v7eng.mp4"}, createChannel(channelId, videoStream, channelBus))
+streamScript.spawn(videoStream2, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream2","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/Qme6yKmrju3KTmeAoPHbtgGWrMAEriPLp1AdE6dn1Mwrb4?filename=GLENFIDDICHxRYCHARSKI_202201003_v7eng.mp4"}, createChannel(channelId, videoStream2, channelBus))
+streamScript.spawn(videoStream3, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream3","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/Qme6yKmrju3KTmeAoPHbtgGWrMAEriPLp1AdE6dn1Mwrb4?filename=GLENFIDDICHxRYCHARSKI_202201003_v7eng.mp4"}, createChannel(channelId, videoStream3, channelBus))
 //script3.spawn(Elevator, {"speed":3,"levels":"0 6 10 14 18","duration":2000}, createChannel(channelId, Elevator, channelBus))
-script3.spawn(Elevator, {"speed":5,"levels":"0 6.02 9.96 14.07 18.8","duration":2000}, createChannel(channelId, Elevator, channelBus))
-script2.spawn(videoStream4, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream4","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/QmY77qmRkibpJw6Z9wEteAoS7RhxAgfjEiFbqZxUX1wwKf?filename=h264_540.mp4"}, createChannel(channelId, videoStream4, channelBus))
-script4.spawn(npc,{target:npctarget}, createChannel(channelId, Elevator, channelBus))
+elevatorscript.spawn(Elevator, {"speed":5,"levels":"0 6.02 9.96 14.07 18.8","duration":2000}, createChannel(channelId, Elevator, channelBus))
+streamScript.spawn(videoStream4, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream4","actionId":"toggle","values":{}}],"customStation":"https://ipfs.io/ipfs/Qme6yKmrju3KTmeAoPHbtgGWrMAEriPLp1AdE6dn1Mwrb4?filename=GLENFIDDICHxRYCHARSKI_202201003_v7eng.mp4"}, createChannel(channelId, videoStream4, channelBus))
+npcscript.spawn(npc,{target:npctarget}, createChannel(channelId, Elevator, channelBus))

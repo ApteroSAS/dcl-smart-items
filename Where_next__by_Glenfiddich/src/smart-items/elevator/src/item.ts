@@ -105,7 +105,7 @@ export default class Platform implements IScript<Props> {
         platform.setParent(host)
         //platform.addComponentOrReplace(new BoxShape())
         platform.addComponent(new Transform({ position: new Vector3(0, 0, 0),scale: new Vector3(1, 1, 1) }))
-        platform.addComponent(new GLTFShape("55a10ad0-c973-4692-9e20-76270ef4bdcc/models/Ascenseur.glb"))
+        platform.addComponent(new GLTFShape("src/smart-items/elevator/models/Ascenseur.glb"))
 
         const actualSpeed = speed/20 * 1000;
         const levelsArray = levels.split(" ").map(x => parseFloat(x));

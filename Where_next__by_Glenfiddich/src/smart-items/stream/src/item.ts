@@ -107,7 +107,7 @@ export default class Button implements IScript<Props> {
 
     let placeholderMaterial = new Material()
     placeholderMaterial.albedoTexture = new Texture(
-      props.image ? props.image : 'a747f104-5434-42a8-a543-8739c24cf253/images/stream3.png'
+      props.image ? props.image : 'src/smart-items/stream/images/stream3.png'
     )
     placeholderMaterial.specularIntensity = 0
     placeholderMaterial.roughness = 1
