@@ -17,7 +17,7 @@ export default class Bot18 implements IScript<Props> {
 
         const dialog: Dialog[] = [
             {
-                text: "Hey, I'm Charlie - The body guard. Are you over 18 years old ?",
+                text: "Are you over 18 years old or of legal age to view alcoholic content in your country?",
                 isQuestion: true,
                 offsetY: 20,
                 buttons: [
@@ -26,7 +26,7 @@ export default class Bot18 implements IScript<Props> {
                 ]
             },
             {
-                text: "Come back when you grow up.",
+                text: "Unfortunately, you cannot enter. The site contains alcoholic content, inappropriate for your age.",
                 isEndOfDialog: true,
                 triggeredByNext: () => {
                     this.npc.playAnimation('hello', true, 2)
@@ -67,8 +67,8 @@ export default class Bot18 implements IScript<Props> {
             },
             {
                 idleAnim:"idle",
-                faceUser:true,
-                reactDistance:4,
+                faceUser:false,
+                reactDistance:2,
                 portrait: {
                     path: 'src/smart-items/npc/images/charlie-avatar.png',
                     height: 256,
